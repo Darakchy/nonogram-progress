@@ -1,6 +1,6 @@
 # Nonogram Progress
 
-Расширение для Chrome, которое показывает прогресс решения японского кроссворда на [nonograms.ru](https://www.nonograms.ru) и [nonograms.com](https://www.nonograms.com).
+Расширение для Chrome, которое показывает прогресс решения японского кроссворда на [nonograms.ru](https://www.nonograms.ru).
 
 В углу страницы появляется панель (её можно перетаскивать):
 
