@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Nonogram Progress",
+  "version": "1.0",
+  "author": "DarMax",
+  "description": "Показывает степень заполнения японского кроссворда на nonograms.ru",
+  "permissions": ["declarativeNetRequest"],
+  "host_permissions": ["*://*.nonograms.ru/*", "*://*.nonograms.com/*"],
+  "declarative_net_request": {
+    "rule_resources": [{ "id": "rules", "enabled": true, "path": "rules.json" }]
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["loader.js"],
+      "matches": ["*://*.nonograms.ru/*", "*://*.nonograms.com/*"]
+    }
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.nonograms.ru/nonograms*",
+        "*://*.nonograms.com/nonograms*"
+      ],
+      "js": ["panel.js"],
+      "world": "MAIN",
+      "run_at": "document_idle"
+    }
+  ]
+}

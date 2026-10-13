@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "priority": 2,
+    "action": { "type": "allow" },
+    "condition": {
+      "urlFilter": "nnp_orig=1",
+      "resourceTypes": ["xmlhttprequest"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": { "extensionPath": "/loader.js" }
+    },
+    "condition": {
+      "regexFilter": "^https?://www\\.nonograms\\.(ru|com)/js/nonogram2\\.min\\.[0-9]+\\.js",
+      "resourceTypes": ["script"]
+    }
+  }
+]
