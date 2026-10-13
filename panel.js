@@ -95,7 +95,7 @@
     el("known").textContent =
       "Определено клеток: " + pct(filled + crosses, w * h) + "%";
     el("lines").textContent =
-      "Строк: " + rowsDone + "/" + h + "| Столбцов: " + colsDone + "/" + w;
+      "Строк: " + rowsDone + "/" + h + " | Столбцов: " + colsDone + "/" + w;
   }
 
   update();
