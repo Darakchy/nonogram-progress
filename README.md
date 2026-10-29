@@ -24,8 +24,7 @@ The site draws the grid on a canvas, and the grid's state is stored inside the g
 
 If the site updates its game script, the panel may show "No connection to the game", but the puzzle itself won't be affected.
 
------------------------------------------------------------------------------------------------
-
+# Nonogram Прогресс 
 Расширение для Chrome, которое показывает прогресс решения японского кроссворда на [nonograms.ru](https://www.nonograms.ru).
 
 В углу страницы появляется панель (её можно перетаскивать):
